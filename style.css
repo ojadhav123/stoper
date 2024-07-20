@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer-input-section {
+    margin-bottom: 20px;
+}
+
+.timer-input-section input[type="number"] {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.timer-input-section button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.timer-input-section button[type="button"]:hover {
+    background-color: #3e8e41;
+}
+
+.active-timers-display-section {
+    margin-bottom: 20px;
+}
+
+.active-timers-display-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.active-timers-display-section li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.active-timers-display-section li:last-child {
+    border-bottom: none;
+}
+
+.active-timers-display-section.timer-time {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.active-timers-display-section.stop-timer-btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active-timers-display-section.stop-timer-btn:hover {
+    background-color: #cc0000;
+}
+
+.timer-end-display-section {
+    display: none;
+}
+
+.timer-end-display-section.show {
+    display: block;
+}
+
+.timer-end-display-section h2 {
+    color: #ff0000;
+}
+
+.timer-end-display-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
